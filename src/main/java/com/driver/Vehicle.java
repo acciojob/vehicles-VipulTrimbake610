@@ -53,6 +53,7 @@ public class Vehicle {
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
     public void stop(){
+        setCurrentSpeed(0);
         System.out.println("stop method called - The vehicle is stopped");
     }
 
