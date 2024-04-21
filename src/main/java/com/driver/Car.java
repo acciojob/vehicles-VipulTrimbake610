@@ -31,7 +31,8 @@ public class Car extends Vehicle {
     }
     public void stop(){
         changeGear(1);
-        changeSpeed(0,getCurrentDirection());
+        changeSpeed(0,0);
+
         System.out.println("stop method called - The vehicle is stopped");
     }
 
