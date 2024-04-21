@@ -2,9 +2,9 @@ package com.driver;
 import java.util.*;
 
 public class Vehicle {
-    private String name;
-    private int currentSpeed;
-    private int currentDirection;
+    private String name="";
+    private int currentSpeed=0;
+    private int currentDirection=0;
     public Vehicle() {
     }
     public Vehicle(String name) {
@@ -48,13 +48,11 @@ public class Vehicle {
     }
     public void move(int speed, int direction){
         //set the values of currentSpeed and currentDirection
-        this.currentSpeed = speed;
-        this.currentDirection = direction;
+        this.currentSpeed += speed;
+        this.currentDirection += direction;
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
     public void stop(){
-        setCurrentSpeed(0);
-        setCurrentDirection(0);
         System.out.println("stop method called - The vehicle is stopped");
     }
 
