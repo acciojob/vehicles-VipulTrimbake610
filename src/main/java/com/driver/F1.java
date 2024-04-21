@@ -4,6 +4,10 @@ public class F1 extends Car {
 
     String name;
     boolean isManual;
+
+    public F1(){
+
+    }
     public F1(String name, boolean isManual) {
         // Use arbitrary values for parameters which are not mentioned
         this.name = name;
