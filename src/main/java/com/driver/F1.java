@@ -43,4 +43,24 @@ public class F1 extends Car {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean isManual() {
+        return isManual;
+    }
+
+    @Override
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
 }
