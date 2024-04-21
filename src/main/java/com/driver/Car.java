@@ -29,11 +29,11 @@ public class Car extends Vehicle {
         move(newSpeed,newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
-//    public void stop(){
-//        changeGear(1);
-//        changeSpeed(0,getCurrentDirection());
-//        System.out.println("stop method called - The vehicle is stopped");
-//    }
+    public void stop(){
+        changeGear(1);
+        changeSpeed(0,getCurrentDirection());
+        System.out.println("stop method called - The vehicle is stopped");
+    }
 
     public int getWheels() {
         return wheels;
